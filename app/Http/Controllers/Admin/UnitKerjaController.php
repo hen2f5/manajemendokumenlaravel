@@ -14,7 +14,9 @@ class UnitKerjaController extends Controller
     public function index()
     {
         $poksi         = Poksi::orderBy('id_poksi','DESC')->get();
-		$unit_kerja 	=UnitKerja::orderBy('id_unit_kerja','DESC')->get();
+		$unit_kerja     = UnitKerja::with('poksi')
+                    ->orderBy('nama_unit_kerja')
+                    ->get();
         $akhir          =UnitKerja::orderBy('urutan','DESC')->first();
         if($akhir == null) {
             $kode    = '1';

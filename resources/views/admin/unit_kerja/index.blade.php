@@ -44,7 +44,9 @@
     <td class="text-center">
         <input class="form-check-input" type="checkbox" name="id_unit_kerja[]" value="<?php echo $unit_kerja->id_unit_kerja ?>" id="gridCheck<?php echo $i ?>">
     </td>
-    <td><?php echo $unit_kerja->nama_unit_kerja ?></td>
+    <td><strong><?php echo $unit_kerja->nama_unit_kerja ?></strong>
+        <br><small>Poksi: <em><?php echo $unit_kerja->poksi?->nama_poksi ?></em></small>    
+    </td>
     <td><?php echo $unit_kerja->kode_unit_kerja ?></td>
     <td><?php echo $unit_kerja->keterangan ?></td>
     <td><?php echo $unit_kerja->urutan ?></td>
