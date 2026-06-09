@@ -8,7 +8,7 @@
     </div>
 @endif
 
-<form action="{{ asset('admin/unit-kerja/proses_edit') }}" enctype="multipart/form-data" method="post" accept-charset="utf-8">
+<form action="{{ asset('admin/poksi/proses_edit') }}" enctype="multipart/form-data" method="post" accept-charset="utf-8">
 {{ csrf_field() }}
 
 <div class="row">
@@ -16,8 +16,8 @@
 		<div class="card">
 			<div class="card-header">FOTO/LOGO</div>
 			<div class="card-body p-3 text-center">
-				<?php if($unit_kerja->gambar != "") { ?>
-		            <img src="{{ asset('assets/upload/image/thumbs/'.$unit_kerja->gambar) }}" class="img img-fluid img-thumbnail">
+				<?php if($poksi->gambar != "") { ?>
+		            <img src="{{ asset('assets/upload/image/thumbs/'.$poksi->gambar) }}" class="img img-fluid img-thumbnail">
 		        <?php }else{ echo '<p class="badge bg-warning text-center">Belum ada</p>'; } ?>
 			</div>
 		</div>
@@ -28,44 +28,33 @@
 			<div class="card-header">Update Data</div>
 			<div class="card-body p-3">
 
-				<input type="hidden" name="id_unit_kerja" value="<?php echo $unit_kerja->id_unit_kerja ?>">
+				<input type="hidden" name="id_poksi" value="<?php echo $poksi->id_poksi ?>">
 
 				<div class="form-group row mb-3">
-					<label class="col-sm-3 control-label text-right">Kelompok Substansi</label>
+					<label class="col-sm-3 control-label text-right">Status Kelompok Substansi</label>
 					<div class="col-sm-9">
-						<select name="id_poksi" class="form-control">
-							@foreach($poksi as $p)
-								<option value="{{ $p->id_poksi }}" {{ $unit_kerja->id_poksi == $p->id_poksi ? 'selected' : '' }}>{{ $p->nama_poksi }}</option>
-							@endforeach
-						</select>
-					</div>
-				</div>
-
-				<div class="form-group row mb-3">
-					<label class="col-sm-3 control-label text-right">Status Unit Kerja</label>
-					<div class="col-sm-9">
-						<select name="status_unit_kerja" class="form-control">
+						<select name="status_poksi" class="form-control">
 							<option value="Aktif">Aktif</option>
-							<option value="Non Aktif" <?php if($unit_kerja->status_unit_kerja=="Non Aktif") { echo 'selected'; } ?>>Non Aktif</option>
+							<option value="Non Aktif" <?php if($poksi->status_poksi=="Non Aktif") { echo 'selected'; } ?>>Non Aktif</option>
 						</select>
 					</div>
 				</div>
 
 				<div class="form-group row mb-3">
-					<label class="col-sm-3 control-label text-right">Nama Unit Kerja</label>
+					<label class="col-sm-3 control-label text-right">Nama Kelompok Substansi</label>
 					<div class="col-sm-9">
-						<input type="text" name="nama_unit_kerja" class="form-control" placeholder="Nama lengkap" value="{{ $unit_kerja->nama_unit_kerja }}" required>
+						<input type="text" name="nama_poksi" class="form-control" placeholder="Nama lengkap" value="{{ $poksi->nama_poksi }}" required>
 					</div>
 				</div>
 
 				<div class="form-group row mb-3">
-					<label class="col-sm-3 control-label text-right">Kode dan Nomor Urut Unit Kerja</label>
+					<label class="col-sm-3 control-label text-right">Kode dan Nomor Urut Kelompok Substansi</label>
 					<div class="col-sm-4">
-						<input type="text" name="kode_unit_kerja" class="form-control" placeholder="Kode Unit Kerja" value="{{ $unit_kerja->kode_unit_kerja }}" required>
-						<small class="text-secondary">Kode Unit Kerja</small>
+						<input type="text" name="kode_poksi" class="form-control" placeholder="Kode Kelompok Substansi" value="{{ $poksi->kode_poksi }}" required>
+						<small class="text-secondary">Kode Kelompok Substansi</small>
 					</div>
 					<div class="col-sm-5">
-						<input type="number" name="urutan" class="form-control" placeholder="Nomor Urut Unit Kerja" value="{{ $unit_kerja->urutan }}" required>
+						<input type="number" name="urutan" class="form-control" placeholder="Nomor Urut Kelompok Substansi" value="{{ $poksi->urutan }}" required>
 						<small class="text-secondary">Nomor urut</small>
 					</div>
 				</div>				
@@ -73,7 +62,7 @@
 				<div class="form-group row mb-3">
 					<label class="col-sm-3 control-label text-right">Keterangan</label>
 					<div class="col-sm-9">
-						<textarea name="keterangan" class="form-control"><?php echo $unit_kerja->keterangan ?></textarea>
+						<textarea name="keterangan" class="form-control"><?php echo $poksi->keterangan ?></textarea>
 					</div>
 				</div>
 
@@ -90,7 +79,7 @@
 						<div class="form-group pull-right btn-group">
 							<input type="submit" name="submit" class="btn btn-primary " value="Simpan Data">
 							<input type="reset" name="reset" class="btn btn-success " value="Reset">
-							<a href="{{ asset('admin/unit-kerja') }}" class="btn btn-danger">Kembali</a>
+							<a href="{{ asset('admin/poksi') }}" class="btn btn-danger">Kembali</a>
 						</div>
 					</div>
 					<div class="clearfix"></div>

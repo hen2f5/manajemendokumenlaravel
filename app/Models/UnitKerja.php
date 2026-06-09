@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class UnitKerja extends Model
 {
@@ -31,6 +32,15 @@ class UnitKerja extends Model
     public function scopeListing($query)
     {
         return $query->with('users')->orderBy('nama_unit_kerja', 'ASC');
+    }
+
+    public function poksi(): BelongsTo
+    {
+        return $this->belongsTo(
+            Poksi::class,
+            'id_poksi',
+            'id_poksi'
+        );
     }
 
     public function scopeAktif($query)

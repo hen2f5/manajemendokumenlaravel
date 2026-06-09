@@ -18,7 +18,7 @@ use App\Http\Controllers\Api\MenuAplikasiController AS ApiMenuAplikasiController
 use App\Http\Controllers\Admin\DokumenController;
 use App\Http\Controllers\Admin\AlbumController;
 use App\Http\Controllers\Admin\StatistikController;
-
+use App\Http\Controllers\Admin\PoksiController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -82,6 +82,15 @@ Route::middleware(['checklogin'])->prefix('admin')->name('admin.')->group(functi
     Route::post('/unit-kerja/proses_edit', [UnitKerjaController::class, 'proses_edit'])->name('proses_edit');
     Route::get('/unit-kerja/delete/{par1}', [UnitKerjaController::class, 'delete'])->name('delete');
     Route::post('/unit-kerja/proses', [UnitKerjaController::class, 'proses'])->name('proses');
+
+    // poksi
+    Route::get('/poksi', [PoksiController::class, 'index'])->name('Poksi');
+    Route::post('/poksi/tambah', [PoksiController::class, 'tambah'])->name('tambah');
+    Route::get('/poksi/edit/{par1}', [PoksiController::class, 'edit'])->name('edit');
+    Route::get('/poksi/activate/{par1}', [PoksiController::class, 'activate'])->name('activate');
+    Route::post('/poksi/proses_edit', [PoksiController::class, 'proses_edit'])->name('proses_edit');
+    Route::get('/poksi/delete/{par1}', [PoksiController::class, 'delete'])->name('delete');
+    Route::post('/poksi/proses', [PoksiController::class, 'proses'])->name('proses');
 
     // jenis-dokumen
     Route::get('/jenis-dokumen', [JenisDokumenController::class, 'index'])->name('unitkerja');

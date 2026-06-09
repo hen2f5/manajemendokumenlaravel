@@ -8,24 +8,13 @@
 				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 			</div>
 			<div class="modal-body">
-				<form action="{{ asset('admin/unit-kerja/tambah') }}" enctype="multipart/form-data" method="post" accept-charset="utf-8">
+				<form action="{{ asset('admin/poksi/tambah') }}" enctype="multipart/form-data" method="post" accept-charset="utf-8">
 {{ csrf_field() }}
 
 				<div class="form-group row mb-3">
-					<label class="col-sm-3 control-label text-right">Kelompok Substansi</label>
+					<label class="col-sm-3 control-label text-right">Status Kelompok Substansi</label>
 					<div class="col-sm-9">
-						<select name="id_poksi" class="form-control">
-							@foreach($poksi as $p)
-								<option value="{{ $p->id_poksi }}">{{ $p->nama_poksi }}</option>
-							@endforeach
-						</select>
-					</div>
-				</div>
-
-				<div class="form-group row mb-3">
-					<label class="col-sm-3 control-label text-right">Status Unit Kerja</label>
-					<div class="col-sm-9">
-						<select name="status_unit_kerja" class="form-control">
+						<select name="status_poksi" class="form-control">
 							<option value="Aktif">Aktif</option>
 							<option value="Non Aktif">Non Aktif</option>
 						</select>
@@ -33,20 +22,20 @@
 				</div>
 
 				<div class="form-group row mb-3">
-					<label class="col-sm-3 control-label text-right">Nama Unit Kerja</label>
+					<label class="col-sm-3 control-label text-right">Nama Kelompok Substansi</label>
 					<div class="col-sm-9">
-						<input type="text" name="nama_unit_kerja" class="form-control" placeholder="Nama lengkap" value="{{ old('nama_unit_kerja') }}" required>
+						<input type="text" name="nama_poksi" class="form-control" placeholder="Nama lengkap" value="{{ old('nama_poksi') }}" required>
 					</div>
 				</div>
 
 				<div class="form-group row mb-3">
-					<label class="col-sm-3 control-label text-right">Kode dan Nomor Urut Unit Kerja</label>
+					<label class="col-sm-3 control-label text-right">Kode dan Nomor Urut Kelompok Substansi</label>
 					<div class="col-sm-4">
-						<input type="text" name="kode_unit_kerja" class="form-control" placeholder="Kode Unit Kerja" value="{{ $kode_unit_kerja }}" required>
-						<small class="text-secondary">Kode Unit Kerja</small>
+						<input type="text" name="kode_poksi" class="form-control" placeholder="Kode Kelompok Substansi" value="{{ $kode_poksi }}" required>
+						<small class="text-secondary">Kode Kelompok Substansi</small>
 					</div>
 					<div class="col-sm-5">
-						<input type="number" name="urutan" class="form-control" placeholder="Nomor Urut Unit Kerja" value="{{ $kode }}" required>
+						<input type="number" name="urutan" class="form-control" placeholder="Nomor Urut Kelompok Substansi" value="{{ $kode }}" required>
 						<small class="text-secondary">Nomor urut</small>
 					</div>
 				</div>				

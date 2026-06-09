@@ -5,6 +5,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 use App\Models\Unitkerja;
+use App\Models\Poksi;
 use Image;
 
 class UnitKerjaController extends Controller
@@ -12,6 +13,7 @@ class UnitKerjaController extends Controller
     // Index
     public function index()
     {
+        $poksi         = Poksi::orderBy('id_poksi','DESC')->get();
 		$unit_kerja 	=UnitKerja::orderBy('id_unit_kerja','DESC')->get();
         $akhir          =UnitKerja::orderBy('urutan','DESC')->first();
         $kode           = $akhir->urutan+1;
@@ -23,11 +25,12 @@ class UnitKerjaController extends Controller
             $kode_unit_kerja    = $kode;
         }
 
-		$data = array(  'title'               => 'Unit Kerja ('.count($unit_kerja).')',
-						'unit_kerja'  => $unit_kerja,
+		$data = array(  'title'             => 'Unit Kerja ('.count($unit_kerja).')',
+						'unit_kerja'        => $unit_kerja,
                         'kode_unit_kerja'   => $kode_unit_kerja,
-                        'kode'      => $kode,
-                        'content'     => 'admin/unit_kerja/index'
+                        'kode'              => $kode,
+                        'poksi'             => $poksi,
+                        'content'           => 'admin/unit_kerja/index'
                     );
         return view('admin/layout/wrapper',$data);
     }
@@ -35,11 +38,12 @@ class UnitKerjaController extends Controller
     // Index
     public function edit($id_unit_kerja)
     {
-        
+        $poksi         = Poksi::orderBy('id_poksi','DESC')->get();
         $unit_kerja   =UnitKerja::where('id_unit_kerja',$id_unit_kerja)->orderBy('id_unit_kerja','DESC')->first();
 
         $data = array(  'title'         => 'Edit Unit Kerja',
                         'unit_kerja'    => $unit_kerja,
+                        'poksi'         => $poksi,
                         'content'       => 'admin/unit_kerja/edit'
                     );
         return view('admin/layout/wrapper',$data);
@@ -88,6 +92,7 @@ class UnitKerjaController extends Controller
             // END UPLOAD
            UnitKerja::insert([
                 'id_user'           => Session()->get('id_user'),
+                'id_poksi'          => $request->id_poksi,
                 'kode_unit_kerja'   => $request->kode_unit_kerja,
                 'nama_unit_kerja'   => $request->nama_unit_kerja,
                 'keterangan'   	    => $request->keterangan,
@@ -98,6 +103,7 @@ class UnitKerjaController extends Controller
         }else{
             UnitKerja::insert([
                 'id_user'           => Session()->get('id_user'),
+                'id_poksi'          => $request->id_poksi,
                 'kode_unit_kerja'   => $request->kode_unit_kerja,
                 'nama_unit_kerja'   => $request->nama_unit_kerja,
                 'keterangan'        => $request->keterangan,
@@ -138,6 +144,7 @@ class UnitKerjaController extends Controller
             $slug_user = Str::slug($request->nama_unit_kerja, '-');
            UnitKerja::where('id_unit_kerja',$request->id_unit_kerja)->update([
                 'id_user'           => Session()->get('id_user'),
+                    'id_poksi'          => $request->id_poksi,
                 'kode_unit_kerja'   => $request->kode_unit_kerja,
                 'nama_unit_kerja'   => $request->nama_unit_kerja,
                 'keterangan'        => $request->keterangan,
@@ -149,6 +156,7 @@ class UnitKerjaController extends Controller
             $slug_user = Str::slug($request->nama_unit_kerja, '-');
            UnitKerja::where('id_unit_kerja',$request->id_unit_kerja)->update([
                 'id_user'           => Session()->get('id_user'),
+                'id_poksi'          => $request->id_poksi,
                 'kode_unit_kerja'   => $request->kode_unit_kerja,
                 'nama_unit_kerja'   => $request->nama_unit_kerja,
                 'keterangan'        => $request->keterangan,
