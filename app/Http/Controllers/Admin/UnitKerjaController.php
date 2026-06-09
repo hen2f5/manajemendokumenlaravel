@@ -16,7 +16,11 @@ class UnitKerjaController extends Controller
         $poksi         = Poksi::orderBy('id_poksi','DESC')->get();
 		$unit_kerja 	=UnitKerja::orderBy('id_unit_kerja','DESC')->get();
         $akhir          =UnitKerja::orderBy('urutan','DESC')->first();
-        $kode           = $akhir->urutan+1;
+        if($akhir == null) {
+            $kode    = '1';
+        }else{  
+            $kode    = $akhir->urutan+1;
+        }
         if($kode < 10) {
             $kode_unit_kerja    = '00'.$kode;
         }elseif($kode < 100) {
