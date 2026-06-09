@@ -1,0 +1,41 @@
+RENCANA APLIKASI:
+-----------------
+- Nama aplikasi: DataVet (Data Veteriner)
+
+TUJUAN:
+--------
+- Pengelolaan file semua user
+
+LEVELING USER:
+--------------
+- Seperti REGASN Pemprov DKI
+
+
+HAK AKSES DOKUMEN:
+------------------
+- Dokumen dibuka untuk public dengan akun
+
+
+ALUR UPLOAD DOKUMEN:
+--------------------
+- Ada jenis dokumen 		: jenis_dokumen
+- Ada sub jenis dokumen 	: sub_jenis_dokumen
+- Ada tingkat perkembangan 	: tingkat_perkembangan
+- Ada tabel dokumen 		: dokumen
+
+TABEL DOKUMEN:
+-----------
+id_dokumen
+id_user
+id_jenis_dokumen
+id_sub_jenis_dokumen
+id_perkembangan
+kode_dokumen
+nama_dokumen
+keterangan
+dokumen
+ekstensi_file
+ukuran
+tanggal_upload
+tanggal_update
+
