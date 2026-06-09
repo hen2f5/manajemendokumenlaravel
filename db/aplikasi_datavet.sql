@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Jun 09, 2026 at 10:34 AM
+-- Generation Time: Jun 09, 2026 at 11:36 AM
 -- Server version: 8.0.44
 -- PHP Version: 8.3.28
 
@@ -302,26 +302,27 @@ CREATE TABLE `menu_akses` (
 --
 
 INSERT INTO `menu_akses` (`id_menu_akses`, `created_by`, `id_akses_level`, `id_menu_aplikasi`, `id_menu_aplikasi_sub`, `urutan_menu_aplikasi`, `urutan_menu_aplikasi_sub`, `tanggal_update`) VALUES
-(58, 1, 6, 1, 0, 1, 0, '2026-03-15 17:21:14'),
-(59, 1, 6, 2, 0, 2, 0, '2026-03-15 17:21:14'),
-(60, 1, 6, 6, 0, 3, 0, '2026-03-15 17:21:14'),
-(61, 1, 6, 3, 0, 4, 0, '2026-03-15 17:21:14'),
-(62, 1, 6, 4, 0, 5, 0, '2026-03-15 17:21:14'),
-(63, 1, 6, 5, 0, 11, 0, '2026-03-15 17:21:14'),
-(64, 1, 6, 3, 1, 4, 1, '2026-03-15 17:21:14'),
-(65, 1, 6, 3, 2, 4, 2, '2026-03-15 17:21:14'),
-(66, 1, 6, 3, 3, 4, 3, '2026-03-15 17:21:14'),
-(67, 1, 6, 3, 17, 4, 4, '2026-03-15 17:21:14'),
-(68, 1, 6, 4, 4, 5, 1, '2026-03-15 17:21:14'),
-(69, 1, 6, 4, 5, 5, 2, '2026-03-15 17:21:14'),
-(70, 1, 6, 4, 6, 5, 3, '2026-03-15 17:21:14'),
-(71, 1, 6, 5, 7, 11, 1, '2026-03-15 17:21:14'),
-(72, 1, 6, 5, 8, 11, 2, '2026-03-15 17:21:14'),
-(73, 1, 6, 5, 9, 11, 3, '2026-03-15 17:21:14'),
-(74, 1, 6, 5, 10, 11, 4, '2026-03-15 17:21:14'),
-(75, 1, 6, 5, 11, 11, 5, '2026-03-15 17:21:14'),
-(76, 1, 6, 5, 12, 11, 6, '2026-03-15 17:21:14'),
-(77, 1, 6, 5, 16, 11, 7, '2026-03-15 17:21:14');
+(78, 1, 6, 1, 0, 1, 0, '2026-06-09 11:14:23'),
+(79, 1, 6, 2, 0, 2, 0, '2026-06-09 11:14:23'),
+(80, 1, 6, 6, 0, 3, 0, '2026-06-09 11:14:23'),
+(81, 1, 6, 3, 0, 4, 0, '2026-06-09 11:14:23'),
+(82, 1, 6, 4, 0, 5, 0, '2026-06-09 11:14:23'),
+(83, 1, 6, 5, 0, 11, 0, '2026-06-09 11:14:23'),
+(84, 1, 6, 3, 1, 4, 1, '2026-06-09 11:14:23'),
+(85, 1, 6, 3, 2, 4, 2, '2026-06-09 11:14:23'),
+(86, 1, 6, 3, 3, 4, 3, '2026-06-09 11:14:23'),
+(87, 1, 6, 3, 17, 4, 4, '2026-06-09 11:14:23'),
+(88, 1, 6, 3, 18, 4, 5, '2026-06-09 11:14:23'),
+(89, 1, 6, 4, 4, 5, 1, '2026-06-09 11:14:23'),
+(90, 1, 6, 4, 5, 5, 2, '2026-06-09 11:14:23'),
+(91, 1, 6, 4, 6, 5, 3, '2026-06-09 11:14:23'),
+(92, 1, 6, 5, 7, 11, 1, '2026-06-09 11:14:23'),
+(93, 1, 6, 5, 8, 11, 2, '2026-06-09 11:14:23'),
+(94, 1, 6, 5, 9, 11, 3, '2026-06-09 11:14:23'),
+(95, 1, 6, 5, 10, 11, 4, '2026-06-09 11:14:23'),
+(96, 1, 6, 5, 11, 11, 5, '2026-06-09 11:14:23'),
+(97, 1, 6, 5, 12, 11, 6, '2026-06-09 11:14:23'),
+(98, 1, 6, 5, 16, 11, 7, '2026-06-09 11:14:23');
 
 -- --------------------------------------------------------
 
@@ -399,7 +400,8 @@ INSERT INTO `menu_aplikasi_sub` (`id_menu_aplikasi_sub`, `id_menu_aplikasi`, `na
 (11, 5, 'Setting Email', 'fa-solid fa-envelope', 'admin/konfigurasi/email', NULL, 5, 'Aktif', 1, '2026-03-13 23:01:07', 1, '2026-03-13 09:01:07', NULL, NULL),
 (12, 5, 'Pejabat dan Pimpinan', 'fa-solid fa-user', 'admin/pejabat', NULL, 6, 'Aktif', 1, '2026-03-13 23:02:12', 1, '2026-03-13 09:02:12', NULL, NULL),
 (16, 5, 'Setting Unggahan', 'fa-solid fa-upload', 'admin/konfigurasi/unggah', NULL, 7, 'Aktif', 1, '2026-03-15 10:53:20', 1, '2026-03-14 20:53:20', NULL, NULL),
-(17, 3, 'Album Dokumen', 'fa-solid fa-file-image', 'admin/album', NULL, 4, 'Aktif', 1, '2026-03-15 11:44:19', 1, '2026-03-14 21:44:19', NULL, NULL);
+(17, 3, 'Album Dokumen', 'fa-solid fa-file-image', 'admin/album', NULL, 4, 'Aktif', 1, '2026-03-15 11:44:19', 1, '2026-03-14 21:44:19', NULL, NULL),
+(18, 3, 'Kelompok Substansi', 'fa-solid fa-arrow-right', 'admin/poksi', NULL, 5, 'Aktif', 1, '2026-06-09 11:14:07', 1, '2026-06-09 04:14:07', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -609,6 +611,32 @@ INSERT INTO `perkembangan` (`id_perkembangan`, `id_user`, `updated_by`, `kode_pe
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `poksi`
+--
+
+CREATE TABLE `poksi` (
+  `id_poksi` int NOT NULL,
+  `id_user` int NOT NULL,
+  `kode_poksi` varchar(255) NOT NULL,
+  `nama_poksi` varchar(255) NOT NULL,
+  `keterangan` text,
+  `urutan` int DEFAULT NULL,
+  `status_poksi` enum('Aktif','Non Aktif') DEFAULT 'Aktif',
+  `gambar` varchar(255) DEFAULT NULL,
+  `updated_by` int DEFAULT NULL,
+  `tanggal` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+
+--
+-- Dumping data for table `poksi`
+--
+
+INSERT INTO `poksi` (`id_poksi`, `id_user`, `kode_poksi`, `nama_poksi`, `keterangan`, `urutan`, `status_poksi`, `gambar`, `updated_by`, `tanggal`) VALUES
+(106, 1, '001', 'Program PP', NULL, 1, 'Aktif', NULL, NULL, '2026-06-09 18:24:08');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `sub_jenis_dokumen`
 --
 
@@ -662,6 +690,7 @@ CREATE TABLE `sub_menu` (
 
 CREATE TABLE `unit_kerja` (
   `id_unit_kerja` int NOT NULL,
+  `id_poksi` int DEFAULT NULL,
   `id_user` int NOT NULL,
   `kode_unit_kerja` varchar(255) NOT NULL,
   `nama_unit_kerja` varchar(255) NOT NULL,
@@ -670,6 +699,7 @@ CREATE TABLE `unit_kerja` (
   `status_unit_kerja` enum('Aktif','Non Aktif') DEFAULT 'Aktif',
   `gambar` varchar(255) DEFAULT NULL,
   `updated_by` int DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
   `tanggal` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
 
@@ -677,109 +707,109 @@ CREATE TABLE `unit_kerja` (
 -- Dumping data for table `unit_kerja`
 --
 
-INSERT INTO `unit_kerja` (`id_unit_kerja`, `id_user`, `kode_unit_kerja`, `nama_unit_kerja`, `keterangan`, `urutan`, `status_unit_kerja`, `gambar`, `updated_by`, `tanggal`) VALUES
-(2, 1, '001', 'UKK PI IMERI', 'UKK', 1, 'Aktif', '', 1, '2022-06-13 14:07:05'),
-(3, 1, '002', 'UKK PPM PUSBANGKI', 'UKK', 2, 'Aktif', NULL, 1, '2022-06-13 14:07:12'),
-(4, 1, '003', 'UKK PPM  Laboratorium Terpadu', 'UKK', 3, 'Aktif', NULL, 1, '2022-06-13 14:07:22'),
-(5, 1, '004', 'UKK  PPM Laboratorium Mikrobiologi Klinik', 'UKK', 4, 'Aktif', NULL, 9, '2022-06-13 14:13:02'),
-(6, 76, '005', 'Medical Education Unit (MEU)', 'Unit', 5, 'Aktif', NULL, 76, '2023-03-13 12:54:12'),
-(7, 1, '006', 'Kelembagaan, Protokoler & Kesekretariatan', 'Unit', 6, 'Aktif', NULL, 1, '2022-06-13 14:13:50'),
-(8, 1, '007', 'Hubungan Alumni dan CDC', 'Unit', 7, 'Aktif', NULL, 1, '2022-06-13 14:13:44'),
-(9, 12, '008', 'Transformasi, Manajemen Risiko, dan Monitoring Evaluasi (TREM)', 'Unit', 8, NULL, NULL, 1, '2023-03-23 12:30:10'),
-(10, 1, '009', 'Sumber Daya Manusia', 'Unit', 9, 'Aktif', NULL, 1, '2022-06-13 14:13:29'),
-(11, 1, '010', 'Anggaran', 'Unit', 10, 'Aktif', 'a-1670225488.jpg', 76, '2023-03-13 12:52:19'),
-(12, 1, '011', 'Umum dan Fasilitas', 'Unit', 11, 'Aktif', NULL, 1, '2022-06-13 14:13:16'),
-(13, 1, '012', 'Pengadaan Barang', 'Unit', 12, 'Aktif', NULL, 1, '2022-06-13 14:13:08'),
-(14, 1, '013', 'Kemahasiswaan', 'Unit', 13, 'Aktif', NULL, 1, '2022-06-13 14:13:01'),
-(15, 76, '014', 'Unit Penjaminan Mutu Akademik (UPMA)', 'Unit', 15, 'Aktif', NULL, 76, '2023-03-13 12:54:24'),
-(16, 1, '015', 'E- Learning', 'Unit', 15, 'Aktif', NULL, 1, '2022-06-13 14:12:49'),
-(17, 1, '016', 'Magister Ilmu Biomedik', 'S2', 16, 'Aktif', NULL, 1, '2022-06-13 14:12:43'),
-(18, 30, '017', 'Magister Ilmu Gizi', 'S2', 17, 'Aktif', 'logo-fkui-landscape-hitam-english-1664855733.png', 1, '2022-10-04 10:55:34'),
-(19, 31, '018', 'Magister Kedokteran Kerja', 'S2', 18, 'Aktif', 'makara-ui-full-1664767934.png', 1, '2022-10-03 10:32:14'),
-(20, 1, '019', 'Magister Pendidikan Kedokteran', 'S2', 19, 'Aktif', NULL, 1, '2022-06-13 14:12:18'),
-(21, 1, '020', 'Doktor Ilmu Kedokteran', 'S3', 20, 'Aktif', NULL, 1, '2022-06-13 14:12:12'),
-(22, 1, '021', 'Doktor Ilmu Gizi', 'S3', 21, 'Aktif', NULL, 1, '2022-06-13 14:12:03'),
-(23, 1, '022', 'Doktor Ilmu Biomedik', 'S3', 22, 'Aktif', 'conservation-1648089635.png', 1, '2022-06-13 14:11:55'),
-(24, 1, '023', 'Sarjana dan Profesi Dokter', 'S1', 23, 'Aktif', NULL, 1, '2022-06-13 14:11:37'),
-(25, 1, '024', 'Spesialis Anestesiologi', 'Sp1', 24, 'Aktif', NULL, 1, '2022-06-13 14:11:31'),
-(26, 1, '025', 'Spesialis Ilmu Bedah', 'Sp1', 25, 'Aktif', NULL, 1, '2022-06-13 14:11:26'),
-(27, 1, '026', 'Spesialis Ilmu Penyakit Dalam', 'Sp1', 26, 'Aktif', NULL, 1, '2022-06-13 14:10:04'),
-(28, 1, '027', 'Spesialis Ilmu Kesehatan Anak', 'Sp1', 27, 'Aktif', NULL, 1, '2022-06-13 14:09:59'),
-(29, 1, '028', 'Spesialis Obstetri dan Ginekologi', 'Sp1', 28, 'Aktif', NULL, 1, '2022-06-13 14:09:54'),
-(30, 1, '029', 'Spesialis Neurologi', 'Sp1', 29, 'Aktif', NULL, 1, '2022-06-13 14:09:48'),
-(31, 1, '030', 'Spesialis Ilmu Kedokteran Jiwa', 'Sp1', 30, 'Aktif', NULL, 1, '2022-06-13 14:09:42'),
-(32, 1, '031', 'Spesialis Ilmu Kesehatan Mata', 'Sp1', 31, 'Aktif', NULL, 1, '2022-06-13 14:09:05'),
-(33, 1, '032', 'Spesialis Dermatologi dan Venereologi', 'Sp1', 32, 'Aktif', NULL, 1, '2022-06-13 14:07:29'),
-(34, 1, '033', 'Spesialis Kesehatan Telinga Hidung Tenggorok, Kepala Leher', 'Sp1', 33, 'Aktif', NULL, 1, '2022-06-13 14:06:59'),
-(35, 1, '034', 'Spesialis Ilmu Penyakit Jantung dan Pembuluh Darah', 'Sp1', 34, 'Aktif', NULL, 1, '2022-06-13 14:06:54'),
-(36, 1, '035', 'Spesialis Pulmonologi dan Ilmu Kedokteran Respirasi', 'Sp1', 35, 'Aktif', NULL, 1, '2022-06-13 14:06:49'),
-(37, 1, '036', 'Spesialis Radiologi', 'Sp1', 36, 'Aktif', NULL, 1, '2022-06-13 14:06:43'),
-(38, 1, '037', 'Spesialis Kedokteran Forensik dan Medikolegal', 'Sp1', 37, 'Aktif', NULL, 1, '2022-06-13 14:06:38'),
-(39, 1, '038', 'Spesialis Patologi Anatomik', 'Sp1', 38, 'Aktif', NULL, 1, '2022-06-13 14:06:33'),
-(40, 1, '039', 'Spesialis Patologi Klinik', 'Sp1', 39, 'Aktif', NULL, 1, '2022-06-13 14:06:28'),
-(41, 1, '040', 'Spesialis Orthopaedi dan Traumatologi', 'Sp1', 40, 'Aktif', NULL, 1, '2022-06-13 14:06:23'),
-(42, 1, '041', 'Spesialis Urologi', 'Sp1', 41, 'Aktif', NULL, 1, '2022-06-13 14:06:19'),
-(43, 1, '042', 'Spesialis Ilmu Bedah Saraf', 'Sp1', 42, 'Aktif', NULL, 1, '2022-06-13 14:06:13'),
-(44, 1, '043', 'Spesialis Ilmu Kedokteran Fisik dan Rehabilitasi', 'Sp1', 43, 'Aktif', NULL, 1, '2022-06-13 14:06:08'),
-(45, 57, '044', 'Spesialis Ilmu Bedah Plastik Rekonstruksi dan Estetik', 'Sp1', 44, 'Aktif', 'logo-final-1664244109.png', 1, '2022-09-27 09:01:49'),
-(46, 58, '045', 'Spesialis Ilmu Kedokteran Olahraga', 'Sp1', 45, 'Aktif', 'artboard-1-copy1-1672995134.png', 1, '2023-01-06 15:52:14'),
-(47, 59, '046', 'Spesialis Mikrobiologi Klinik', 'Sp1', 46, 'Aktif', NULL, 1, '2023-01-05 12:51:54'),
-(48, 1, '047', 'Spesialis Farmakologi Klinik', 'Sp1', 47, 'Aktif', NULL, 1, '2022-06-13 14:01:55'),
-(49, 1, '048', 'Spesialis Kedokteran Okupasi', 'Sp1', 48, 'Aktif', NULL, 1, '2022-06-13 14:01:47'),
-(50, 1, '049', 'Spesialis Bedah Toraks Kardiovaskular', 'Sp1', 49, 'Aktif', NULL, 1, '2022-06-13 14:01:43'),
-(51, 1, '050', 'Spesialis Onkologi Radiasi', 'Sp1', 50, 'Aktif', NULL, 1, '2022-06-13 14:01:37'),
-(52, 64, '051', 'Spesialis Kedokteran Penerbangan', 'Sp1', 51, 'Aktif', 'nyqnlpuj-400x400-1679968267.jpg', 1, '2023-03-28 08:51:07'),
-(53, 1, '052', 'Spesialis Ilmu Gizi Klinik', 'Sp1', 52, 'Aktif', NULL, 1, '2022-06-13 14:00:06'),
-(54, 1, '053', 'Spesialis Parasitologi Klinik', 'Sp1', 53, 'Aktif', NULL, 1, '2022-06-13 14:00:01'),
-(55, 1, '054', 'Spesialis Akupuntur Medik', 'Sp1', 54, 'Aktif', NULL, 1, '2022-06-13 13:59:56'),
-(56, 1, '055', 'Spesialis Kedokteran Keluarga Layanan Primer', 'Sp1', 55, 'Aktif', NULL, 1, '2022-06-13 13:59:52'),
-(57, 1, '056', 'Subspesialis Anestesiologi dan Terapi Intensif', 'Sp2', 56, 'Aktif', NULL, 1, '2022-06-13 13:59:49'),
-(58, 1, '057', 'Subspesialis Ilmu Bedah', 'Sp2', 57, 'Aktif', NULL, 1, '2022-06-13 13:59:45'),
-(59, 1, '058', 'Subspesialis Ilmu Kesehatan Anak', 'Sp2', 58, 'Aktif', NULL, 1, '2022-06-13 13:59:41'),
-(60, 1, '059', 'Subspesialis Obstetri dan Ginekologi', 'Sp2', 59, 'Aktif', NULL, 1, '2022-06-13 13:59:33'),
-(61, 1, '060', 'Subspesialis Ilmu Penyakit Dalam', 'Sp2', 60, 'Aktif', NULL, 1, '2022-06-13 13:57:32'),
-(62, 9, '061', 'Subspesialis Ilmu Kedokteran Jiwa', 'Sp2', 61, 'Aktif', 'makara-ui-fk1-1656659460.png', 12, '2023-03-14 14:05:19'),
-(63, 1, '062', 'Subspesialis Orthopaedi dan Traumatologi', 'Sp2', 62, 'Aktif', NULL, 1, '2022-06-13 13:57:20'),
-(64, 77, '063', 'Departemen Anatomi', 'Dept', 63, 'Aktif', '20161216-170158-1663214780.jpg', 1, '2022-09-15 11:06:20'),
-(65, 1, '064', 'Departemen Biokimia dan Biologi Molekuler', 'Dept', 64, 'Aktif', NULL, 1, '2022-06-16 10:24:23'),
-(66, 1, '065', 'Departemen Biologi', 'Dept', 65, 'Aktif', NULL, 1, '2022-06-16 10:24:17'),
-(67, 80, '066', 'Departemen Farmakologi dan Terapeutik', 'Dept', 66, 'Aktif', 'whatsapp-image-2022-07-07-at-151725-1657181925.jpeg', 1, '2022-07-07 15:18:45'),
-(68, 1, '067', 'Departemen Farmasi Kedokteran', 'Dept', 67, 'Aktif', NULL, 1, '2022-06-16 10:24:03'),
-(69, 82, '068', 'Departemen Fisiologi dan Biofisika', 'Dept', 68, 'Aktif', 'makara-ui-fk-1659018648.png', 1, '2022-07-28 21:30:48'),
-(70, 1, '069', 'Departemen Histologi', 'Dept', 69, 'Aktif', NULL, 1, '2022-06-16 10:23:50'),
-(71, 76, '070', 'Departemen Ilmu Kedokteran Komunitas', 'Dept', 70, 'Aktif', 'images-4-1657001753.jpeg', 76, '2023-03-13 12:55:45'),
-(72, 1, '071', 'Departemen Kimia Kedokteran', 'Dept', 71, 'Aktif', NULL, 1, '2022-06-16 10:23:37'),
-(73, 1, '072', 'Departemen Parasitologi', 'Dept', 72, 'Aktif', NULL, 1, '2022-06-16 10:23:30'),
-(74, 1, '073', 'Departemen Patologi Anatomik', 'Dept', 73, 'Aktif', NULL, 1, '2022-06-16 10:23:19'),
-(75, 1, '074', 'Departemen Pendidikan Kedokteran', 'Dept', 74, 'Aktif', NULL, 1, '2022-06-16 10:23:12'),
-(76, 1, '075', 'Departemen Anestesiologi dan Intensive Care', 'Dept', 75, 'Aktif', NULL, 1, '2022-06-16 10:23:05'),
-(77, 1, '076', 'Departemen Dermatologi dan Venereologi', 'Dept', 76, 'Aktif', NULL, 1, '2022-06-16 10:22:58'),
-(78, 1, '077', 'Departemen Ilmu Bedah', 'Dept', 77, 'Aktif', NULL, 1, '2022-06-16 10:22:52'),
-(79, 1, '078', 'Departemen Bedah Saraf', 'Dept', 78, 'Aktif', NULL, 1, '2022-06-16 10:22:33'),
-(80, 1, '079', 'Departemen Ilmu Gizi', 'Dept', 79, 'Aktif', NULL, 1, '2022-06-16 10:22:24'),
-(81, 1, '080', 'Departemen Ilmu Kesehatan Jiwa', 'Dept', 80, 'Aktif', NULL, 1, '2022-06-16 10:20:31'),
-(82, 1, '081', 'Departemen Ilmu Kedokteran Forensik dan Medikolegal', 'Dept', 81, 'Aktif', NULL, 1, '2022-06-16 10:20:23'),
-(83, 1, '082', 'Departemen Ilmu Kesehatan Anak', 'Dept', 82, 'Aktif', NULL, 1, '2022-06-16 10:19:41'),
-(84, 1, '083', 'Departemen Ilmu Kesehatan Mata', 'Dept', 83, 'Aktif', NULL, 1, '2022-06-16 10:19:27'),
-(85, 12, '084', 'Departemen Telinga Hidung Tenggorok (THT) Bedah Kepala Leher (BKL)', 'Dept', 84, NULL, NULL, 1, '2024-03-21 13:11:02'),
-(86, 1, '085', 'Departemen Ilmu Penyakit Dalam', 'Dept', 85, 'Aktif', NULL, 1, '2022-06-16 10:19:09'),
-(87, 1, '086', 'Departemen Kardiologi dan Kedokteran Vaskuler', 'Dept', 86, 'Aktif', NULL, 1, '2022-06-16 10:19:02'),
-(88, 1, '087', 'Departemen Mikrobiologi Klinik', 'Dept', 87, 'Aktif', NULL, 1, '2022-06-16 10:18:55'),
-(89, 102, '088', 'Departemen Neurologi', 'Dept', 88, 'Aktif', 'otak-1656570888.jpg', 1, '2022-06-30 13:34:48'),
-(90, 1, '089', 'Departemen Obstetri dan Ginekologi', 'Dept', 89, 'Aktif', NULL, 1, '2022-06-16 10:18:43'),
-(91, 1, '090', 'Departemen Orthopaedi dan Traumatologi', 'Dept', 90, 'Aktif', NULL, 1, '2022-06-16 10:18:37'),
-(92, 1, '091', 'Departemen Patologi Klinik', 'Dept', 91, 'Aktif', NULL, 1, '2022-06-16 10:18:32'),
-(93, 1, '092', 'Departemen Pulmonologi dan Kedokteran Respirasi', 'Dept', 92, 'Aktif', NULL, 1, '2022-06-16 10:18:20'),
-(94, 1, '093', 'Departemen Radiologi', 'Dept', 93, 'Aktif', NULL, 1, '2022-06-16 10:17:52'),
-(95, 1, '094', 'Departemen Urologi', 'Dept', 94, 'Aktif', NULL, 1, '2022-06-16 10:05:03'),
-(96, 1, '095', 'Departemen Ilmu Kedokteran Fisik dan Rehabilitasi', 'Dept', 95, 'Aktif', NULL, 1, '2022-06-16 09:58:46'),
-(97, 110, '096', 'Keselamatan, Kesehatan Kerja, dan Lingkungan (K3L)', 'Unit', 96, 'Aktif', 'sedang-1660215422-k3-1-1679973284.jpg', 1, '2023-03-28 10:14:44'),
-(99, 1, '097', 'Continuing Medical Education (CME)', 'Unit', 97, 'Aktif', NULL, 1, '2026-03-07 14:56:56'),
-(100, 1, '098', 'Hubungan Masyarakat', 'Unit', 98, 'Aktif', NULL, 1, '2022-06-16 10:35:42'),
-(101, 76, '099', 'Manajer Riset dan Pengabdian Masyarakat', 'Dekanat', 99, 'Aktif', NULL, 76, '2022-06-21 11:49:17'),
-(102, 76, '100', 'Manajer Kerjasama, Ventura dan Hubungan Alumni', 'Dekanat', 100, 'Aktif', NULL, 76, '2022-06-21 11:48:59'),
-(104, 76, '101', 'International Relations Office (IRO)', 'Unit', 101, 'Aktif', NULL, 76, '2023-03-13 12:44:21'),
-(105, 1, '102', 'Keuangan dan Akuntansi', 'Unit', 102, 'Aktif', NULL, 1, '2026-03-07 14:56:47');
+INSERT INTO `unit_kerja` (`id_unit_kerja`, `id_poksi`, `id_user`, `kode_unit_kerja`, `nama_unit_kerja`, `keterangan`, `urutan`, `status_unit_kerja`, `gambar`, `updated_by`, `updated_at`, `tanggal`) VALUES
+(2, NULL, 1, '001', 'UKK PI IMERI', 'UKK', 1, 'Aktif', '', 1, NULL, '2022-06-13 14:07:05'),
+(3, NULL, 1, '002', 'UKK PPM PUSBANGKI', 'UKK', 2, 'Aktif', NULL, 1, NULL, '2022-06-13 14:07:12'),
+(4, NULL, 1, '003', 'UKK PPM  Laboratorium Terpadu', 'UKK', 3, 'Aktif', NULL, 1, NULL, '2022-06-13 14:07:22'),
+(5, NULL, 1, '004', 'UKK  PPM Laboratorium Mikrobiologi Klinik', 'UKK', 4, 'Aktif', NULL, 9, NULL, '2022-06-13 14:13:02'),
+(6, NULL, 76, '005', 'Medical Education Unit (MEU)', 'Unit', 5, 'Aktif', NULL, 76, NULL, '2023-03-13 12:54:12'),
+(7, NULL, 1, '006', 'Kelembagaan, Protokoler & Kesekretariatan', 'Unit', 6, 'Aktif', NULL, 1, NULL, '2022-06-13 14:13:50'),
+(8, NULL, 1, '007', 'Hubungan Alumni dan CDC', 'Unit', 7, 'Aktif', NULL, 1, NULL, '2022-06-13 14:13:44'),
+(9, NULL, 12, '008', 'Transformasi, Manajemen Risiko, dan Monitoring Evaluasi (TREM)', 'Unit', 8, NULL, NULL, 1, NULL, '2023-03-23 12:30:10'),
+(10, NULL, 1, '009', 'Sumber Daya Manusia', 'Unit', 9, 'Aktif', NULL, 1, NULL, '2022-06-13 14:13:29'),
+(11, NULL, 1, '010', 'Anggaran', 'Unit', 10, 'Aktif', 'a-1670225488.jpg', 76, NULL, '2023-03-13 12:52:19'),
+(12, NULL, 1, '011', 'Umum dan Fasilitas', 'Unit', 11, 'Aktif', NULL, 1, NULL, '2022-06-13 14:13:16'),
+(13, NULL, 1, '012', 'Pengadaan Barang', 'Unit', 12, 'Aktif', NULL, 1, NULL, '2022-06-13 14:13:08'),
+(14, NULL, 1, '013', 'Kemahasiswaan', 'Unit', 13, 'Aktif', NULL, 1, NULL, '2022-06-13 14:13:01'),
+(15, NULL, 76, '014', 'Unit Penjaminan Mutu Akademik (UPMA)', 'Unit', 15, 'Aktif', NULL, 76, NULL, '2023-03-13 12:54:24'),
+(16, NULL, 1, '015', 'E- Learning', 'Unit', 15, 'Aktif', NULL, 1, NULL, '2022-06-13 14:12:49'),
+(17, NULL, 1, '016', 'Magister Ilmu Biomedik', 'S2', 16, 'Aktif', NULL, 1, NULL, '2022-06-13 14:12:43'),
+(18, NULL, 30, '017', 'Magister Ilmu Gizi', 'S2', 17, 'Aktif', 'logo-fkui-landscape-hitam-english-1664855733.png', 1, NULL, '2022-10-04 10:55:34'),
+(19, NULL, 31, '018', 'Magister Kedokteran Kerja', 'S2', 18, 'Aktif', 'makara-ui-full-1664767934.png', 1, NULL, '2022-10-03 10:32:14'),
+(20, NULL, 1, '019', 'Magister Pendidikan Kedokteran', 'S2', 19, 'Aktif', NULL, 1, NULL, '2022-06-13 14:12:18'),
+(21, NULL, 1, '020', 'Doktor Ilmu Kedokteran', 'S3', 20, 'Aktif', NULL, 1, NULL, '2022-06-13 14:12:12'),
+(22, NULL, 1, '021', 'Doktor Ilmu Gizi', 'S3', 21, 'Aktif', NULL, 1, NULL, '2022-06-13 14:12:03'),
+(23, NULL, 1, '022', 'Doktor Ilmu Biomedik', 'S3', 22, 'Aktif', 'conservation-1648089635.png', 1, NULL, '2022-06-13 14:11:55'),
+(24, NULL, 1, '023', 'Sarjana dan Profesi Dokter', 'S1', 23, 'Aktif', NULL, 1, NULL, '2022-06-13 14:11:37'),
+(25, NULL, 1, '024', 'Spesialis Anestesiologi', 'Sp1', 24, 'Aktif', NULL, 1, NULL, '2022-06-13 14:11:31'),
+(26, NULL, 1, '025', 'Spesialis Ilmu Bedah', 'Sp1', 25, 'Aktif', NULL, 1, NULL, '2022-06-13 14:11:26'),
+(27, NULL, 1, '026', 'Spesialis Ilmu Penyakit Dalam', 'Sp1', 26, 'Aktif', NULL, 1, NULL, '2022-06-13 14:10:04'),
+(28, NULL, 1, '027', 'Spesialis Ilmu Kesehatan Anak', 'Sp1', 27, 'Aktif', NULL, 1, NULL, '2022-06-13 14:09:59'),
+(29, NULL, 1, '028', 'Spesialis Obstetri dan Ginekologi', 'Sp1', 28, 'Aktif', NULL, 1, NULL, '2022-06-13 14:09:54'),
+(30, NULL, 1, '029', 'Spesialis Neurologi', 'Sp1', 29, 'Aktif', NULL, 1, NULL, '2022-06-13 14:09:48'),
+(31, NULL, 1, '030', 'Spesialis Ilmu Kedokteran Jiwa', 'Sp1', 30, 'Aktif', NULL, 1, NULL, '2022-06-13 14:09:42'),
+(32, NULL, 1, '031', 'Spesialis Ilmu Kesehatan Mata', 'Sp1', 31, 'Aktif', NULL, 1, NULL, '2022-06-13 14:09:05'),
+(33, NULL, 1, '032', 'Spesialis Dermatologi dan Venereologi', 'Sp1', 32, 'Aktif', NULL, 1, NULL, '2022-06-13 14:07:29'),
+(34, NULL, 1, '033', 'Spesialis Kesehatan Telinga Hidung Tenggorok, Kepala Leher', 'Sp1', 33, 'Aktif', NULL, 1, NULL, '2022-06-13 14:06:59'),
+(35, NULL, 1, '034', 'Spesialis Ilmu Penyakit Jantung dan Pembuluh Darah', 'Sp1', 34, 'Aktif', NULL, 1, NULL, '2022-06-13 14:06:54'),
+(36, NULL, 1, '035', 'Spesialis Pulmonologi dan Ilmu Kedokteran Respirasi', 'Sp1', 35, 'Aktif', NULL, 1, NULL, '2022-06-13 14:06:49'),
+(37, NULL, 1, '036', 'Spesialis Radiologi', 'Sp1', 36, 'Aktif', NULL, 1, NULL, '2022-06-13 14:06:43'),
+(38, NULL, 1, '037', 'Spesialis Kedokteran Forensik dan Medikolegal', 'Sp1', 37, 'Aktif', NULL, 1, NULL, '2022-06-13 14:06:38'),
+(39, NULL, 1, '038', 'Spesialis Patologi Anatomik', 'Sp1', 38, 'Aktif', NULL, 1, NULL, '2022-06-13 14:06:33'),
+(40, NULL, 1, '039', 'Spesialis Patologi Klinik', 'Sp1', 39, 'Aktif', NULL, 1, NULL, '2022-06-13 14:06:28'),
+(41, NULL, 1, '040', 'Spesialis Orthopaedi dan Traumatologi', 'Sp1', 40, 'Aktif', NULL, 1, NULL, '2022-06-13 14:06:23'),
+(42, NULL, 1, '041', 'Spesialis Urologi', 'Sp1', 41, 'Aktif', NULL, 1, NULL, '2022-06-13 14:06:19'),
+(43, NULL, 1, '042', 'Spesialis Ilmu Bedah Saraf', 'Sp1', 42, 'Aktif', NULL, 1, NULL, '2022-06-13 14:06:13'),
+(44, NULL, 1, '043', 'Spesialis Ilmu Kedokteran Fisik dan Rehabilitasi', 'Sp1', 43, 'Aktif', NULL, 1, NULL, '2022-06-13 14:06:08'),
+(45, NULL, 57, '044', 'Spesialis Ilmu Bedah Plastik Rekonstruksi dan Estetik', 'Sp1', 44, 'Aktif', 'logo-final-1664244109.png', 1, NULL, '2022-09-27 09:01:49'),
+(46, NULL, 58, '045', 'Spesialis Ilmu Kedokteran Olahraga', 'Sp1', 45, 'Aktif', 'artboard-1-copy1-1672995134.png', 1, NULL, '2023-01-06 15:52:14'),
+(47, NULL, 59, '046', 'Spesialis Mikrobiologi Klinik', 'Sp1', 46, 'Aktif', NULL, 1, NULL, '2023-01-05 12:51:54'),
+(48, NULL, 1, '047', 'Spesialis Farmakologi Klinik', 'Sp1', 47, 'Aktif', NULL, 1, NULL, '2022-06-13 14:01:55'),
+(49, NULL, 1, '048', 'Spesialis Kedokteran Okupasi', 'Sp1', 48, 'Aktif', NULL, 1, NULL, '2022-06-13 14:01:47'),
+(50, NULL, 1, '049', 'Spesialis Bedah Toraks Kardiovaskular', 'Sp1', 49, 'Aktif', NULL, 1, NULL, '2022-06-13 14:01:43'),
+(51, NULL, 1, '050', 'Spesialis Onkologi Radiasi', 'Sp1', 50, 'Aktif', NULL, 1, NULL, '2022-06-13 14:01:37'),
+(52, NULL, 64, '051', 'Spesialis Kedokteran Penerbangan', 'Sp1', 51, 'Aktif', 'nyqnlpuj-400x400-1679968267.jpg', 1, NULL, '2023-03-28 08:51:07'),
+(53, NULL, 1, '052', 'Spesialis Ilmu Gizi Klinik', 'Sp1', 52, 'Aktif', NULL, 1, NULL, '2022-06-13 14:00:06'),
+(54, NULL, 1, '053', 'Spesialis Parasitologi Klinik', 'Sp1', 53, 'Aktif', NULL, 1, NULL, '2022-06-13 14:00:01'),
+(55, NULL, 1, '054', 'Spesialis Akupuntur Medik', 'Sp1', 54, 'Aktif', NULL, 1, NULL, '2022-06-13 13:59:56'),
+(56, NULL, 1, '055', 'Spesialis Kedokteran Keluarga Layanan Primer', 'Sp1', 55, 'Aktif', NULL, 1, NULL, '2022-06-13 13:59:52'),
+(57, NULL, 1, '056', 'Subspesialis Anestesiologi dan Terapi Intensif', 'Sp2', 56, 'Aktif', NULL, 1, NULL, '2022-06-13 13:59:49'),
+(58, NULL, 1, '057', 'Subspesialis Ilmu Bedah', 'Sp2', 57, 'Aktif', NULL, 1, NULL, '2022-06-13 13:59:45'),
+(59, NULL, 1, '058', 'Subspesialis Ilmu Kesehatan Anak', 'Sp2', 58, 'Aktif', NULL, 1, NULL, '2022-06-13 13:59:41'),
+(60, NULL, 1, '059', 'Subspesialis Obstetri dan Ginekologi', 'Sp2', 59, 'Aktif', NULL, 1, NULL, '2022-06-13 13:59:33'),
+(61, NULL, 1, '060', 'Subspesialis Ilmu Penyakit Dalam', 'Sp2', 60, 'Aktif', NULL, 1, NULL, '2022-06-13 13:57:32'),
+(62, NULL, 9, '061', 'Subspesialis Ilmu Kedokteran Jiwa', 'Sp2', 61, 'Aktif', 'makara-ui-fk1-1656659460.png', 12, NULL, '2023-03-14 14:05:19'),
+(63, NULL, 1, '062', 'Subspesialis Orthopaedi dan Traumatologi', 'Sp2', 62, 'Aktif', NULL, 1, NULL, '2022-06-13 13:57:20'),
+(64, NULL, 77, '063', 'Departemen Anatomi', 'Dept', 63, 'Aktif', '20161216-170158-1663214780.jpg', 1, NULL, '2022-09-15 11:06:20'),
+(65, NULL, 1, '064', 'Departemen Biokimia dan Biologi Molekuler', 'Dept', 64, 'Aktif', NULL, 1, NULL, '2022-06-16 10:24:23'),
+(66, NULL, 1, '065', 'Departemen Biologi', 'Dept', 65, 'Aktif', NULL, 1, NULL, '2022-06-16 10:24:17'),
+(67, NULL, 80, '066', 'Departemen Farmakologi dan Terapeutik', 'Dept', 66, 'Aktif', 'whatsapp-image-2022-07-07-at-151725-1657181925.jpeg', 1, NULL, '2022-07-07 15:18:45'),
+(68, NULL, 1, '067', 'Departemen Farmasi Kedokteran', 'Dept', 67, 'Aktif', NULL, 1, NULL, '2022-06-16 10:24:03'),
+(69, NULL, 82, '068', 'Departemen Fisiologi dan Biofisika', 'Dept', 68, 'Aktif', 'makara-ui-fk-1659018648.png', 1, NULL, '2022-07-28 21:30:48'),
+(70, NULL, 1, '069', 'Departemen Histologi', 'Dept', 69, 'Aktif', NULL, 1, NULL, '2022-06-16 10:23:50'),
+(71, NULL, 76, '070', 'Departemen Ilmu Kedokteran Komunitas', 'Dept', 70, 'Aktif', 'images-4-1657001753.jpeg', 76, NULL, '2023-03-13 12:55:45'),
+(72, NULL, 1, '071', 'Departemen Kimia Kedokteran', 'Dept', 71, 'Aktif', NULL, 1, NULL, '2022-06-16 10:23:37'),
+(73, NULL, 1, '072', 'Departemen Parasitologi', 'Dept', 72, 'Aktif', NULL, 1, NULL, '2022-06-16 10:23:30'),
+(74, NULL, 1, '073', 'Departemen Patologi Anatomik', 'Dept', 73, 'Aktif', NULL, 1, NULL, '2022-06-16 10:23:19'),
+(75, NULL, 1, '074', 'Departemen Pendidikan Kedokteran', 'Dept', 74, 'Aktif', NULL, 1, NULL, '2022-06-16 10:23:12'),
+(76, NULL, 1, '075', 'Departemen Anestesiologi dan Intensive Care', 'Dept', 75, 'Aktif', NULL, 1, NULL, '2022-06-16 10:23:05'),
+(77, NULL, 1, '076', 'Departemen Dermatologi dan Venereologi', 'Dept', 76, 'Aktif', NULL, 1, NULL, '2022-06-16 10:22:58'),
+(78, NULL, 1, '077', 'Departemen Ilmu Bedah', 'Dept', 77, 'Aktif', NULL, 1, NULL, '2022-06-16 10:22:52'),
+(79, NULL, 1, '078', 'Departemen Bedah Saraf', 'Dept', 78, 'Aktif', NULL, 1, NULL, '2022-06-16 10:22:33'),
+(80, NULL, 1, '079', 'Departemen Ilmu Gizi', 'Dept', 79, 'Aktif', NULL, 1, NULL, '2022-06-16 10:22:24'),
+(81, NULL, 1, '080', 'Departemen Ilmu Kesehatan Jiwa', 'Dept', 80, 'Aktif', NULL, 1, NULL, '2022-06-16 10:20:31'),
+(82, NULL, 1, '081', 'Departemen Ilmu Kedokteran Forensik dan Medikolegal', 'Dept', 81, 'Aktif', NULL, 1, NULL, '2022-06-16 10:20:23'),
+(83, NULL, 1, '082', 'Departemen Ilmu Kesehatan Anak', 'Dept', 82, 'Aktif', NULL, 1, NULL, '2022-06-16 10:19:41'),
+(84, NULL, 1, '083', 'Departemen Ilmu Kesehatan Mata', 'Dept', 83, 'Aktif', NULL, 1, NULL, '2022-06-16 10:19:27'),
+(85, NULL, 12, '084', 'Departemen Telinga Hidung Tenggorok (THT) Bedah Kepala Leher (BKL)', 'Dept', 84, NULL, NULL, 1, NULL, '2024-03-21 13:11:02'),
+(86, NULL, 1, '085', 'Departemen Ilmu Penyakit Dalam', 'Dept', 85, 'Aktif', NULL, 1, NULL, '2022-06-16 10:19:09'),
+(87, NULL, 1, '086', 'Departemen Kardiologi dan Kedokteran Vaskuler', 'Dept', 86, 'Aktif', NULL, 1, NULL, '2022-06-16 10:19:02'),
+(88, NULL, 1, '087', 'Departemen Mikrobiologi Klinik', 'Dept', 87, 'Aktif', NULL, 1, NULL, '2022-06-16 10:18:55'),
+(89, NULL, 102, '088', 'Departemen Neurologi', 'Dept', 88, 'Aktif', 'otak-1656570888.jpg', 1, NULL, '2022-06-30 13:34:48'),
+(90, NULL, 1, '089', 'Departemen Obstetri dan Ginekologi', 'Dept', 89, 'Aktif', NULL, 1, NULL, '2022-06-16 10:18:43'),
+(91, NULL, 1, '090', 'Departemen Orthopaedi dan Traumatologi', 'Dept', 90, 'Aktif', NULL, 1, NULL, '2022-06-16 10:18:37'),
+(92, NULL, 1, '091', 'Departemen Patologi Klinik', 'Dept', 91, 'Aktif', NULL, 1, NULL, '2022-06-16 10:18:32'),
+(93, NULL, 1, '092', 'Departemen Pulmonologi dan Kedokteran Respirasi', 'Dept', 92, 'Aktif', NULL, 1, NULL, '2022-06-16 10:18:20'),
+(94, NULL, 1, '093', 'Departemen Radiologi', 'Dept', 93, 'Aktif', NULL, 1, NULL, '2022-06-16 10:17:52'),
+(95, NULL, 1, '094', 'Departemen Urologi', 'Dept', 94, 'Aktif', NULL, 1, NULL, '2022-06-16 10:05:03'),
+(96, NULL, 1, '095', 'Departemen Ilmu Kedokteran Fisik dan Rehabilitasi', 'Dept', 95, 'Aktif', NULL, 1, NULL, '2022-06-16 09:58:46'),
+(97, NULL, 110, '096', 'Keselamatan, Kesehatan Kerja, dan Lingkungan (K3L)', 'Unit', 96, 'Aktif', 'sedang-1660215422-k3-1-1679973284.jpg', 1, NULL, '2023-03-28 10:14:44'),
+(99, NULL, 1, '097', 'Continuing Medical Education (CME)', 'Unit', 97, 'Aktif', NULL, 1, NULL, '2026-03-07 14:56:56'),
+(100, NULL, 1, '098', 'Hubungan Masyarakat', 'Unit', 98, 'Aktif', NULL, 1, NULL, '2022-06-16 10:35:42'),
+(101, NULL, 76, '099', 'Manajer Riset dan Pengabdian Masyarakat', 'Dekanat', 99, 'Aktif', NULL, 76, NULL, '2022-06-21 11:49:17'),
+(102, NULL, 76, '100', 'Manajer Kerjasama, Ventura dan Hubungan Alumni', 'Dekanat', 100, 'Aktif', NULL, 76, NULL, '2022-06-21 11:48:59'),
+(104, NULL, 76, '101', 'International Relations Office (IRO)', 'Unit', 101, 'Aktif', NULL, 76, NULL, '2023-03-13 12:44:21'),
+(105, 106, 1, '102', 'Keuangan dan Akuntansi', 'Unit', 102, 'Aktif', NULL, 1, '2026-06-09 11:35:05', '2026-06-09 18:35:05');
 
 -- --------------------------------------------------------
 
@@ -1866,7 +1896,40 @@ INSERT INTO `user_logs` (`id_user_log`, `id_user`, `ip_address`, `username`, `ur
 (1018, 1, '::1', 'javawebmedia', 'http://localhost/datavet/admin/konfigurasi/update-profil', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36', '2026-06-09 10:27:44'),
 (1019, 1, '::1', 'javawebmedia', 'http://localhost/datavet/admin/konfigurasi/profil', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36', '2026-06-09 10:27:45'),
 (1020, 1, '::1', 'javawebmedia', 'http://localhost/datavet/admin/konfigurasi/profil', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36', '2026-06-09 10:27:52'),
-(1021, 1, '::1', 'javawebmedia', 'http://localhost/datavet/admin/dokumen', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36', '2026-06-09 10:28:22');
+(1021, 1, '::1', 'javawebmedia', 'http://localhost/datavet/admin/dokumen', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36', '2026-06-09 10:28:22'),
+(1022, 1, '::1', 'javawebmedia', 'http://localhost/datavet/admin/dasbor', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36', '2026-06-09 10:49:58'),
+(1023, 1, '::1', 'javawebmedia', 'http://localhost/datavet/admin/dokumen', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36', '2026-06-09 10:50:07'),
+(1024, 1, '::1', 'javawebmedia', 'http://localhost/datavet/admin/jenis-dokumen', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36', '2026-06-09 10:50:15'),
+(1025, 1, '::1', 'javawebmedia', 'http://localhost/datavet/admin/dasbor', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36', '2026-06-09 11:08:33'),
+(1026, 1, '::1', 'javawebmedia', 'http://localhost/datavet/admin/unit-kerja', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36', '2026-06-09 11:08:48'),
+(1027, 1, '::1', 'javawebmedia', 'http://localhost/datavet/admin/user', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36', '2026-06-09 11:09:05'),
+(1028, 1, '::1', 'javawebmedia', 'http://localhost/datavet/admin/menu-aplikasi', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36', '2026-06-09 11:13:47'),
+(1029, 1, '::1', 'javawebmedia', 'http://localhost/datavet/admin/menu-aplikasi/get-urutan-sub?id_menu_aplikasi=3', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36', '2026-06-09 11:13:54'),
+(1030, 1, '::1', 'javawebmedia', 'http://localhost/datavet/admin/menu-aplikasi/simpan-sub', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36', '2026-06-09 11:14:07'),
+(1031, 1, '::1', 'javawebmedia', 'http://localhost/datavet/admin/menu-aplikasi', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36', '2026-06-09 11:14:07'),
+(1032, 1, '::1', 'javawebmedia', 'http://localhost/datavet/admin/akses-level', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36', '2026-06-09 11:14:14'),
+(1033, 1, '::1', 'javawebmedia', 'http://localhost/datavet/admin/akses-level/menu/6', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36', '2026-06-09 11:14:17'),
+(1034, 1, '::1', 'javawebmedia', 'http://localhost/datavet/admin/akses-level/proses-menu?6=', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36', '2026-06-09 11:14:23'),
+(1035, 1, '::1', 'javawebmedia', 'http://localhost/datavet/admin/akses-level/menu/6', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36', '2026-06-09 11:14:24'),
+(1036, 1, '::1', 'javawebmedia', 'http://localhost/datavet/admin/akses-level', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36', '2026-06-09 11:14:31'),
+(1037, 1, '::1', 'javawebmedia', 'http://localhost/datavet/admin/poksi', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36', '2026-06-09 11:21:48'),
+(1038, 1, '::1', 'javawebmedia', 'http://localhost/datavet/admin/poksi', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36', '2026-06-09 11:22:16'),
+(1039, 1, '::1', 'javawebmedia', 'http://localhost/datavet/admin/poksi', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36', '2026-06-09 11:23:12'),
+(1040, 1, '::1', 'javawebmedia', 'http://localhost/datavet/admin/poksi', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36', '2026-06-09 11:23:27'),
+(1041, 1, '::1', 'javawebmedia', 'http://localhost/datavet/admin/poksi', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36', '2026-06-09 11:23:49'),
+(1042, 1, '::1', 'javawebmedia', 'http://localhost/datavet/admin/poksi/tambah', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36', '2026-06-09 11:24:08'),
+(1043, 1, '::1', 'javawebmedia', 'http://localhost/datavet/admin/poksi', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36', '2026-06-09 11:24:08'),
+(1044, 1, '::1', 'javawebmedia', 'http://localhost/datavet/admin/poksi', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36', '2026-06-09 11:26:33'),
+(1045, 1, '::1', 'javawebmedia', 'http://localhost/datavet/admin/poksi', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36', '2026-06-09 11:27:22'),
+(1046, 1, '::1', 'javawebmedia', 'http://localhost/datavet/admin/poksi', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36', '2026-06-09 11:28:44'),
+(1047, 1, '::1', 'javawebmedia', 'http://localhost/datavet/admin/poksi', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36', '2026-06-09 11:28:58'),
+(1048, 1, '::1', 'javawebmedia', 'http://localhost/datavet/admin/unit-kerja', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36', '2026-06-09 11:32:47'),
+(1049, 1, '::1', 'javawebmedia', 'http://localhost/datavet/admin/unit-kerja/edit/105', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36', '2026-06-09 11:32:58'),
+(1050, 1, '::1', 'javawebmedia', 'http://localhost/datavet/admin/unit-kerja/proses_edit', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36', '2026-06-09 11:33:01'),
+(1051, 1, '::1', 'javawebmedia', 'http://localhost/datavet/admin/unit-kerja/proses_edit', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36', '2026-06-09 11:35:05'),
+(1052, 1, '::1', 'javawebmedia', 'http://localhost/datavet/admin/unit-kerja', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36', '2026-06-09 11:35:05'),
+(1053, 1, '::1', 'javawebmedia', 'http://localhost/datavet/admin/poksi', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36', '2026-06-09 11:35:12'),
+(1054, 1, '::1', 'javawebmedia', 'http://localhost/datavet/admin/poksi', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36', '2026-06-09 11:35:49');
 
 --
 -- Indexes for dumped tables
@@ -1959,6 +2022,14 @@ ALTER TABLE `perkembangan`
   ADD PRIMARY KEY (`id_perkembangan`);
 
 --
+-- Indexes for table `poksi`
+--
+ALTER TABLE `poksi`
+  ADD PRIMARY KEY (`id_poksi`),
+  ADD UNIQUE KEY `kode_poksi` (`kode_poksi`),
+  ADD UNIQUE KEY `nama_poksi` (`nama_poksi`);
+
+--
 -- Indexes for table `sub_jenis_dokumen`
 --
 ALTER TABLE `sub_jenis_dokumen`
@@ -2041,7 +2112,7 @@ ALTER TABLE `menu`
 -- AUTO_INCREMENT for table `menu_akses`
 --
 ALTER TABLE `menu_akses`
-  MODIFY `id_menu_akses` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=78;
+  MODIFY `id_menu_akses` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=99;
 
 --
 -- AUTO_INCREMENT for table `menu_aplikasi`
@@ -2053,7 +2124,7 @@ ALTER TABLE `menu_aplikasi`
 -- AUTO_INCREMENT for table `menu_aplikasi_sub`
 --
 ALTER TABLE `menu_aplikasi_sub`
-  MODIFY `id_menu_aplikasi_sub` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id_menu_aplikasi_sub` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `pejabat`
@@ -2066,6 +2137,12 @@ ALTER TABLE `pejabat`
 --
 ALTER TABLE `perkembangan`
   MODIFY `id_perkembangan` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `poksi`
+--
+ALTER TABLE `poksi`
+  MODIFY `id_poksi` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=107;
 
 --
 -- AUTO_INCREMENT for table `sub_jenis_dokumen`
@@ -2095,7 +2172,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `user_logs`
 --
 ALTER TABLE `user_logs`
-  MODIFY `id_user_log` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1022;
+  MODIFY `id_user_log` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1055;
 
 --
 -- Constraints for dumped tables
