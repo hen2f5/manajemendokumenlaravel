@@ -51,13 +51,20 @@
 					<br>Catatan: <em><?php echo $item->keterangan ?></em>
 				</small>
 			</td>
-			<td><a href="{{ url('admin/dokumen/jenis/'.$item->id_jenis_dokumen) }}"><?php echo $item->jenisDokumen->nama_jenis_dokumen ?></a>
+			<td><a href="{{ url('admin/dokumen/jenis/'.$item->id_jenis_dokumen) }}">
+				{{ optional($item->jenisDokumen)->nama_jenis_dokumen ?? '-' }}
+			</a>
 				<br>
 				<small>
-					<em><a href="{{ url('admin/dokumen/sub-jenis/'.$item->id_jenis_dokumen) }}"><?php echo $item->subJenisDokumen->nama_sub_jenis_dokumen ?></a></em>
+					<em><a href="{{ url('admin/dokumen/sub-jenis/'.$item->id_jenis_dokumen) }}">
+							{{ optional($item->subJenisDokumen)->nama_sub_jenis_dokumen ?? '-' }}
+						</a></em>
 				</small>
 			</td>
-			<td><a href="{{ url('admin/dokumen/perkembangan/'.$item->id_jenis_dokumen) }}"><?php echo $item->perkembangan->nama_perkembangan ?></a><br>
+			<td><a href="{{ url('admin/dokumen/perkembangan/'.$item->id_jenis_dokumen) }}">
+				{{ optional($item->perkembangan)->nama_perkembangan ?? '-' }}
+					
+				</a><br>
 				<small>
 					<em><a href="{{ url('admin/dokumen/album/'.$item->id_jenis_dokumen) }}">{{ $item->album->nama_album ?? '-' }}</a></em>
 				</small></td>
