@@ -55,9 +55,14 @@
                             <?php 
                             if($row->id_unit_kerja==0) { 
                                 echo '<span class="badge bg-success"><i class="fa-solid fa-tasks"></i> Semua Unit Kerja</span>';
-                            }elseif($row->id_unit_kerja > 0) {
+                            }elseif($row->id_unit_kerja > 0) { ?>
                                 
-                                echo '<span class="badge bg-danger"><i class="fa-solid fa-check-circle"></i>'.$row->unitKerja->nama_unit_kerja.'</span>';
+                                <span class="badge bg-danger">
+                                    <i class="fa-solid fa-check-circle"></i> 
+                                    {{ optional($row->unitKerja)->nama_unit_kerja ?? '-' }}
+                                </span>
+
+                            <?php
                             }else{
                                 echo '-';
                             }
