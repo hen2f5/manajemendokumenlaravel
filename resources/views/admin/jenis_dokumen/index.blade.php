@@ -19,10 +19,10 @@
           <i class="fa fa-trash"></i>
       </button> 
         <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#basicModal">
-            <i class="fa fa-plus-circle"></i> Tambah Menu
+            <i class="fa fa-plus-circle"></i> Tambah Dokumen
         </button>
         <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#basicModalSub">
-            <i class="fa fa-plus-circle"></i> Tambah Sub Menu
+            <i class="fa fa-plus-circle"></i> Tambah Sub Dokumen
         </button>
 </div>
 </div>
