@@ -38,6 +38,15 @@
 			</select>
 		</div>
 
+        <div class="mb-3">
+			<select name="id_unit_kerja" class="form-control"  id="id_unit_kerja" required>
+				<option value="">Pilih Unit Kerja</option>
+				<?php foreach($UnitKerja as $item) { ?>
+					<option value="<?php echo $item->id_unit_kerja ?>" class="<?php echo $item->id_unit_kerja ?>" <?php echo old('id_unit_kerja', $dokumen->id_unit_kerja ?? '') == $item->id_unit_kerja ? 'selected' : '' ?>><?php echo $item->nama_unit_kerja ?></option>
+				<?php } ?>
+			</select>
+		</div>
+
         <?php if(count($album) > 0) { ?>
         <div class="mb-3">
             <select name="id_album" class="form-control select2-modal" id="id_album" style="width:100%;">

@@ -14,7 +14,7 @@
 					<div class="row">
 						<div class="col-md-12">
 							<p class="alert alert-warning">
-								<strong>Perhatian!</strong> Silakan pilih tingkat perkembangan, jenis dokumen dan sub jenis dokumen terlebih dahulu baru kemudian memilih file yang akan Anda unggah. Lalu klik tombol <strong>Simpan dan Unggah</strong>. Jumlah Maksimal File dalam Sekali Unggah adalah <strong><?php echo $konfigurasi->jumlah_file_maksimal ?></strong> File. Ukuran Maksimal File adalah <strong><?php echo number_format($konfigurasi->ukuran_file_mb,2) ?></strong> MB. Jenis File Boleh Diunggah adalah <em><?php echo $konfigurasi->ekstensi_file ?></em>
+								<strong>Perhatian!</strong> Silakan pilih tingkat perkembangan, jenis dokumen dan sub jenis dokumen dan Tim Kerja terlebih dahulu baru kemudian memilih file yang akan Anda unggah. Lalu klik tombol <strong>Simpan dan Unggah</strong>. Jumlah Maksimal File dalam Sekali Unggah adalah <strong><?php echo $konfigurasi->jumlah_file_maksimal ?></strong> File. Ukuran Maksimal File adalah <strong><?php echo number_format($konfigurasi->ukuran_file_mb,2) ?></strong> MB. Jenis File Boleh Diunggah adalah <em><?php echo $konfigurasi->ekstensi_file ?></em>
 							</p>
                             
 						</div>
@@ -41,6 +41,15 @@
 									<option value="">Pilih Sub Jenis Dokumen</option>
 									<?php foreach($SubJenisDokumen as $item) { ?>
 										<option value="<?php echo $item->id_sub_jenis_dokumen ?>" class="<?php echo $item->id_jenis_dokumen ?>"><?php echo $item->nama_sub_jenis_dokumen ?></option>
+									<?php } ?>
+								</select>
+							</div>
+
+                            <div class="mb-3">
+								<select name="id_unit_kerja" class="form-control"  id="id_unit_kerja" required>
+									<option value="">Pilih Tim Kerja</option>
+									<?php foreach($UnitKerja as $item) { ?>
+										<option value="<?php echo $item->id_unit_kerja ?>" class="<?php echo $item->id_unit_kerja ?>"><?php echo $item->nama_unit_kerja ?></option>
 									<?php } ?>
 								</select>
 							</div>

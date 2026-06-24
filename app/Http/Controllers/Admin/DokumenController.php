@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Auth;
 use App\Models\Konfigurasi;
 use App\Models\JenisDokumen;
 use App\Models\SubJenisDokumen;
+use App\Models\UnitKerja;
 use App\Models\Dokumen;
 use App\Models\Album;
 use App\Models\Perkembangan;
@@ -19,9 +20,10 @@ class DokumenController extends Controller
     // index
     public function index()
     {
-        $konfigurasi    = Konfigurasi::first();
+        $konfigurasi        = Konfigurasi::first();
         $JenisDokumen       = JenisDokumen::orderBy('urutan','ASC')->get();
         $SubJenisDokumen    = SubJenisDokumen::orderBy('urutan','ASC')->get();
+        $UnitKerja          = UnitKerja::orderBy('urutan','ASC')->get();
         $Album              = Album::orderBy('nama_album','ASC')->get();
         $Perkembangan       = Perkembangan::orderBy('urutan','ASC')->get();
 
@@ -43,6 +45,7 @@ class DokumenController extends Controller
                     'dokumen'           => $dokumen,
                     'JenisDokumen'      => $JenisDokumen,
                     'SubJenisDokumen'   => $SubJenisDokumen,
+                    'UnitKerja'         => $UnitKerja,
                     'album'             => $Album,
                     'dokumen'           => $dokumen,
                     'konfigurasi'       => $konfigurasi,
@@ -84,6 +87,7 @@ class DokumenController extends Controller
         $konfigurasi        = Konfigurasi::first();
         $JenisDokumen       = JenisDokumen::orderBy('urutan','ASC')->get();
         $SubJenisDokumen    = SubJenisDokumen::orderBy('urutan','ASC')->get();
+        $UnitKerja          = UnitKerja::orderBy('urutan','ASC')->get();
         $Album              = Album::orderBy('nama_album','ASC')->get();
         $Perkembangan       = Perkembangan::orderBy('urutan','ASC')->get();
 
@@ -107,6 +111,7 @@ class DokumenController extends Controller
                     'dokumen'           => $dokumen,
                     'JenisDokumen'      => $JenisDokumen,
                     'SubJenisDokumen'   => $SubJenisDokumen,
+                    'UnitKerja'         => $UnitKerja,
                     'album'             => $Album,
                     'dokumen'           => $dokumen,
                     'konfigurasi'       => $konfigurasi,
@@ -122,6 +127,7 @@ class DokumenController extends Controller
         $konfigurasi        = Konfigurasi::first();
         $JenisDokumen       = JenisDokumen::orderBy('urutan','ASC')->get();
         $SubJenisDokumen    = SubJenisDokumen::orderBy('urutan','ASC')->get();
+        $UnitKerja          = UnitKerja::orderBy('urutan','ASC')->get();
         $Album              = Album::orderBy('nama_album','ASC')->get();
         $Perkembangan       = Perkembangan::orderBy('urutan','ASC')->get();
 
@@ -145,6 +151,7 @@ class DokumenController extends Controller
                     'dokumen'           => $dokumen,
                     'JenisDokumen'      => $JenisDokumen,
                     'SubJenisDokumen'   => $SubJenisDokumen,
+                    'UnitKerja'         => $UnitKerja,
                     'album'             => $Album,
                     'dokumen'           => $dokumen,
                     'konfigurasi'       => $konfigurasi,
@@ -160,6 +167,7 @@ class DokumenController extends Controller
         $konfigurasi        = Konfigurasi::first();
         $JenisDokumen       = JenisDokumen::orderBy('urutan','ASC')->get();
         $SubJenisDokumen    = SubJenisDokumen::orderBy('urutan','ASC')->get();
+        $UnitKerja          = UnitKerja::orderBy('urutan', 'ASC')->get();
         $Album              = Album::orderBy('nama_album','ASC')->get();
         $Perkembangan       = Perkembangan::orderBy('urutan','ASC')->get();
 
@@ -183,6 +191,7 @@ class DokumenController extends Controller
                     'dokumen'           => $dokumen,
                     'JenisDokumen'      => $JenisDokumen,
                     'SubJenisDokumen'   => $SubJenisDokumen,
+                    'UnitKerja'         => $UnitKerja,
                     'album'             => $Album,
                     'dokumen'           => $dokumen,
                     'konfigurasi'       => $konfigurasi,
@@ -198,6 +207,7 @@ class DokumenController extends Controller
         $konfigurasi        = Konfigurasi::first();
         $JenisDokumen       = JenisDokumen::orderBy('urutan','ASC')->get();
         $SubJenisDokumen    = SubJenisDokumen::orderBy('urutan','ASC')->get();
+        $UnitKerja          = UnitKerja::orderBy('urutan', 'ASC')->get();
         $Album              = Album::orderBy('nama_album','ASC')->get();
         $Perkembangan       = Perkembangan::orderBy('urutan','ASC')->get();
 
@@ -221,6 +231,7 @@ class DokumenController extends Controller
                     'dokumen'           => $dokumen,
                     'JenisDokumen'      => $JenisDokumen,
                     'SubJenisDokumen'   => $SubJenisDokumen,
+                    'UnitKerja'         => $UnitKerja,
                     'album'             => $Album,
                     'dokumen'           => $dokumen,
                     'konfigurasi'       => $konfigurasi,
@@ -236,6 +247,7 @@ class DokumenController extends Controller
         $konfigurasi        = Konfigurasi::first();
         $JenisDokumen       = JenisDokumen::orderBy('urutan','ASC')->get();
         $SubJenisDokumen    = SubJenisDokumen::orderBy('urutan','ASC')->get();
+        $UnitKerja          = UnitKerja::orderBy('urutan','ASC')->get();
         $Album              = Album::orderBy('nama_album','ASC')->get();
         $Perkembangan       = Perkembangan::orderBy('urutan','ASC')->get();
 
@@ -259,6 +271,7 @@ class DokumenController extends Controller
                     'dokumen'           => $dokumen,
                     'JenisDokumen'      => $JenisDokumen,
                     'SubJenisDokumen'   => $SubJenisDokumen,
+                    'UnitKerja'         => $UnitKerja,
                     'album'             => $Album,
                     'dokumen'           => $dokumen,
                     'konfigurasi'       => $konfigurasi,
@@ -276,6 +289,7 @@ class DokumenController extends Controller
 
         $JenisDokumen       = JenisDokumen::orderBy('urutan','ASC')->get();
         $SubJenisDokumen    = SubJenisDokumen::orderBy('urutan','ASC')->get();
+        $UnitKerja          = UnitKerja::orderBy('urutan','ASC')->get();
         $Album              = Album::orderBy('nama_album','ASC')->get();
         $Perkembangan       = Perkembangan::orderBy('urutan','ASC')->get();
 
@@ -312,6 +326,7 @@ class DokumenController extends Controller
             'dokumen'           => $dokumen,
             'JenisDokumen'      => $JenisDokumen,
             'SubJenisDokumen'   => $SubJenisDokumen,
+            'UnitKerja'         => $UnitKerja,
             'album'             => $Album,
             'dokumen'           => $dokumen,
             'konfigurasi'       => $konfigurasi,
@@ -329,6 +344,7 @@ class DokumenController extends Controller
         $dokumen            = Dokumen::where('kode_dokumen',$kode_dokumen)->first();
         $JenisDokumen       = JenisDokumen::orderBy('urutan','ASC')->get();
         $SubJenisDokumen    = SubJenisDokumen::orderBy('urutan','ASC')->get();
+        $UnitKerja          = UnitKerja::orderBy('urutan','ASC')->get();
         $Album              = Album::orderBy('nama_album','ASC')->get();
         $Perkembangan       = Perkembangan::orderBy('urutan','ASC')->get();
 
@@ -337,6 +353,7 @@ class DokumenController extends Controller
             'dokumen'           => $dokumen,
             'JenisDokumen'      => $JenisDokumen,
             'SubJenisDokumen'   => $SubJenisDokumen,
+            'UnitKerja'         => $UnitKerja,
             'album'             => $Album,
             'dokumen'           => $dokumen,
             'konfigurasi'       => $konfigurasi,

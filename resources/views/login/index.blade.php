@@ -30,7 +30,7 @@
         </div>
         <div class="col-md-6">
           <div class="input-group">
-            <input type="text" name="captcha" class="form-control" id="captcha" placeholder="Captcha" value="<?php if(url('/login')=='http://localhost/datavet/login') { echo $randomString; } ?>" required>
+            <input type="text" name="captcha" class="form-control" id="captcha" placeholder="Captcha" value="<?php if(url('/login')=='http://localhost/manajemendokumenlaravel/login') { echo $randomString; } ?>" required>
             <div class="input-group-prepend">
               <button type="button" class="btn btn-secondary" id="btnCaptcha" data-bs-toggle="tooltip" data-bs-placement="top" title="Refresh Captcha" required><i class="fa-solid fa-sync"></i></button>
             </div>

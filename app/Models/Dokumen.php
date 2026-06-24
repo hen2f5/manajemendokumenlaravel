@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use App\Models\JenisDokumen;
 use App\Models\SubJenisDokumen;
+use App\Models\UnitKerja;
 
 class Dokumen extends Model
 {
@@ -76,7 +77,7 @@ class Dokumen extends Model
         return $this->belongsTo(JenisDokumen::class, 'id_jenis_dokumen', 'id_jenis_dokumen');
     }
 
-    public function subJenisDokumen()
+    public function SubJenisDokumen()
     {
         return $this->belongsTo(SubJenisDokumen::class, 'id_sub_jenis_dokumen', 'id_sub_jenis_dokumen');
     }
@@ -86,9 +87,9 @@ class Dokumen extends Model
         return $this->belongsTo(Perkembangan::class, 'id_perkembangan', 'id_perkembangan');
     }
 
-    public function unitKerja()
+    public function UnitKerja()
     {
-        return $this->belongsTo(UnitKerja::class, 'id_unit_kerja');
+        return $this->belongsTo(UnitKerja::class, 'id_unit_kerja', 'id_unit_kerja');
     }
 
     public function album()

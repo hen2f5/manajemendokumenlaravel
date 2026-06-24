@@ -34,6 +34,7 @@
 			<th width="5%">No</th>
 			<th width="25%">Dokumen</th>
 			<th width="20%">Jenis Dokumen</th>
+			<th width="20%">Tim Kerja</th>
 			<th width="20%">Perkembangan &amp; Album</th>
 			<th width="5%">Ekstensi</th>
 			<th width="10%">Ukuran</th>
@@ -56,10 +57,13 @@
 			</a>
 				<br>
 				<small>
-					<em><a href="{{ url('admin/dokumen/sub-jenis/'.$item->id_jenis_dokumen) }}">
-							{{ optional($item->subJenisDokumen)->nama_sub_jenis_dokumen ?? '-' }}
-						</a></em>
-				</small>
+					</td>
+			<td><a href="{{ url('admin/dokumen/unit_kerja/'.$item->id_unit_kerja) }}">
+				{{ optional($item->unit_kerja)->nama_unit_kerja ?? '-' }}
+			</a>
+				<br>
+				<small>
+					
 			</td>
 			<td><a href="{{ url('admin/dokumen/perkembangan/'.$item->id_jenis_dokumen) }}">
 				{{ optional($item->perkembangan)->nama_perkembangan ?? '-' }}
@@ -109,7 +113,7 @@ $(document).ready(function(){
         var fields = [
             'nama_dokumen',
             'nama_jenis_dokumen',
-            'nama_sub_jenis_dokumen',
+            'nama_unit_kerja',
             'nama_perkembangan',
             'nama_album',
             'keterangan',
